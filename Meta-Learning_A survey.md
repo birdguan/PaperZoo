@@ -3,7 +3,7 @@ Meta-Leaning: A Survey
 Author: Joaquin Vanschoren
 [[Paper link](https://arxiv.org/pdf/1810.03548.pdf)]
 
-## 介绍
+## 1. 介绍
 + 元学习（meta-learning）的挑战在于以系统的、数据驱动的方式学习先验知识
     1. 我们需要收集描述描述预学习任务和之前学习模型的元数据。  
     这些元数据包括用于训练的算法配置（包括超参数设置、pipeline组合和/或神经网络结构），
@@ -11,3 +11,6 @@ Author: Joaquin Vanschoren
     2. 我们需要从这个先前的元数据中学习，以提取和传递用于指导搜索用在新任务上的最佳模型知识。
 + 元学习一次可用于描述的所有基于其他任务的先前经验来学习的方法。先前的任务越是相似，我们可以利用的元数据的类型就越多。
 **关键的首要挑战在于定义任务的相似性。**
+
+## 2. Learning from Model Evaluations
+设有一系列先验任务$t_j \in T$
